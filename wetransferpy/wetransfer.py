@@ -289,7 +289,7 @@ class WeTransfer(object):
         r = requests.get(url)
         download_data = json.loads(r.content)
 
-        print "Downloading {0}...".format(url)
+        print("Downloading {0}...".format(url))
         if 'direct_link' in download_data:
             content_info_string = parse_qs(
                 urlparse(download_data['direct_link']).query)
