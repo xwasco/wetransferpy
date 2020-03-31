@@ -281,7 +281,7 @@ class WeTransfer(object):
                 self.uploadFile(os.path.abspath(os.path.join(root, name)))
 
     def download(self, url, destination=None):
-	url = self._extract_url_redirection(url)
+        url = self._extract_url_redirection(url)
         [file_id, recipient_id, security_hash] = self._extract_params(url)
         url = "https://www.wetransfer.com/api/v1/transfers/{0}/"\
             "download?recipient_id={1}&security_hash={2}&password=&ie=false"\
@@ -339,7 +339,7 @@ class WeTransfer(object):
         return [file_id, recipient_id, security_hash]
 
     def _extract_url_redirection(self, url):
-    	"""
+        """
         Follow the url redirection if necesary
-   	"""
-    	return requests.get(url).url
+        """
+        return requests.get(url).url
