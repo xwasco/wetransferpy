@@ -23,7 +23,11 @@ except ImportError:
 import requests
 from requests_toolbelt import MultipartEncoder, MultipartEncoderMonitor
 
-import Queue
+try:
+    import Queue
+except ImportError:
+    import queue as Queue
+
 import threading
 
 reload(sys)
