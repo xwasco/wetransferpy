@@ -319,7 +319,7 @@ class WeTransfer(object):
                         self._draw_progressbar((counter * CHUNK_SIZE_D) * 1.0/file_size)
                     counter += 1
         # sys.stdout.write('\r100% {0}/{1}\n'.format(file_size, file_size))
-        print "\nFinished! {0}\n".format(file_name)
+        print("\nFinished! {0}\n".format(file_name))
 
     def _extract_params(self, url):
         """
