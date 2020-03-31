@@ -9,7 +9,8 @@ import collections
 import logging
 import time
 import re
-from urlparse import urlparse, parse_qs
+from urllib.parse import urlparse, parse_qs
+#from urlparse import urlparse, parse_qs
 from StringIO import StringIO
 import requests
 from requests_toolbelt import MultipartEncoder, MultipartEncoderMonitor
