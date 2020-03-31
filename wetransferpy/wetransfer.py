@@ -10,6 +10,8 @@ import logging
 import time
 import re
 
+from importlib import reload
+
 try:
     from urlparse import urlparse, parse_qs
 except ImportError:
