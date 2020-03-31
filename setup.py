@@ -25,8 +25,8 @@ setup(
         'Programming Language :: Python :: 2.7',
     ],
     keywords="wetransfer upload download authenticate",
-    url='http://github.com/predat/wetransferpy',
-    download_url='https://github.com/predat/wetransferpy/tarball/' + version,
+    url='http://github.com/xwasco/wetransferpy',
+    download_url='https://github.com/xwasco/wetransferpy/tarball/' + version,
     packages=find_packages(exclude=['contrib', 'docs', 'tests']),
     install_requires=[
         "requests",
