@@ -32,8 +32,9 @@ except ImportError:
 
 import threading
 
-reload(sys)
-sys.setdefaultencoding('utf8')
+if sys.version[0] == '2':
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
 
 WETRANSFER_API_URL = "https://wetransfer.com/api/ui/transfers"
 WETRANSFER_LINK_URL = "{}/link".format(WETRANSFER_API_URL)
