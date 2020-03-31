@@ -46,13 +46,13 @@ if __name__ == "__main__":
             if os.path.isfile(it):
                 print("Upload file : " + it)
                 url = w.uploadFile(it)
-                print 'Download url: {0}\n'.format(url)
+                print('Download url: {0}\n'.format(url))
             elif os.path.isdir(it):
                 w.uploadDir(it)
             else:
                 print("Not a file/directory : " + it)
 
     except KeyboardInterrupt:
-        print ""
+        print("")
         if w._transfer_id:
             w._cancel_transfer()
